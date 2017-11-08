@@ -1,3 +1,14 @@
+/* Show nav */
+function showNav() {
+	document.getElementById("show-nav").style = "display: block";
+	document.getElementById("display-btn").style = "display: none";
+}
+
+function heddieNav() {
+	document.getElementById("show-nav").style = "display: none";
+	document.getElementById("display-btn").style = "display: block";
+}
+
 /* border-bottom-hover1 */
 function overMuose1() {
 	document.getElementById("border-bottom-hover1").style = "border-bottom: 5px solid #C96507";
