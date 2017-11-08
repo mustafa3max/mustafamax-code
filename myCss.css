@@ -1,0 +1,317 @@
+* {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box
+}
+
+/* Start header */
+
+header {
+	background: url(../images/header.jpg) no-repeat top center;
+	background-size: cover;
+	min-height: 500px;
+	position: relative;
+	text-align: center
+}
+
+header .overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	background: rgba(0, 168, 255, .5)
+}
+
+header .overlay h1 {
+	font-size: 50px;
+	margin-top: 100px;
+	font-weight: 100;
+	letter-spacing: 3px;
+	font-family: 'Rubik Mono One', sans-serif;
+
+}
+
+header .overlay h1::before {
+	color: #c96507;
+}
+
+header .overlay span::before {
+	color: #6b6b6b
+}
+
+header .overlay h1::before,
+header .overlay span::before {
+	content: "m";
+	font-family: 'Bungee Shade', cursive;
+	font-size: 100px;
+}
+
+header .overlay .plan {
+	border: solid 4px #fff;
+	font-size: 24px;
+	width: 48%;
+	float: left;
+	padding: 20px;
+	margin: 0 1%;
+	cursor: pointer
+}
+
+header .overlay .order {
+	border: solid 4px #fff;
+	font-size: 24px;
+	padding: 20px;
+	margin: 30px 1% 0;
+	cursor: pointer
+}
+
+@media (max-width: 420px) {}
+
+@media (max-width: 767px) {
+
+	header .overlay h1 {
+		margin-top: 20px !important;
+		font-size: 5px !important;
+	}
+
+	header .overlay {
+		float: none;
+		margin: 0 auto 20px;
+		font-size: 20px
+	}
+}
+
+/* End header */
+
+/* Start featured topics */
+
+.featured-topics article {
+	width: 100%;
+	min-height: 200px;
+	position: relative;
+	top: -70px;
+	text-align: center;
+}
+
+.featured-topics article a section {
+	height: 100%;
+	padding: 7px;
+	background: #fff
+}
+
+.featured-topics article a section .container-img {
+	position: relative;
+	width: 100%
+}
+
+.featured-topics article a section .container-img img {
+	opacity: 1;
+	display: block;
+	width: 100%;
+	height: auto;
+	-webkit-transition: 3s ease;
+	transition: 3s ease;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.featured-topics article a section .container-img .cover {
+	-webkit-transition: 35s ease;
+	-webkit-transition: 3s ease;
+	transition: 3s ease;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%)
+}
+
+.featured-topics article a section .container-img:hover img {
+	opacity: 0.3;
+}
+
+.featured-topics article a section .container-img:hover .cover {
+	opacity: 1;
+}
+
+.featured-topics article a section h1 {
+	font-size: 18px;
+	line-height: 35px;
+	border-bottom: 5px solid #fff;
+	-webkit-transition: 2s;
+	transition: 2s
+}
+
+.featured-topics article a section h1,
+p {
+	color: #000
+}
+
+/* End featured topics */
+
+/* Start adsense top */
+
+.adsense-top section {
+	width: 100%;
+	min-height: 90px;
+	margin: 5px;
+	padding: 5px
+}
+
+/* End adsense top */
+
+/* Start call my */
+
+.all-call .contaenir-call-my {
+	float: right;
+	position: fixed;
+	bottom: -400;
+	right: 20px;
+	-webkit-box-shadow: -10px -10px 15px #555;
+	box-shadow: -3px -3px 15px #555,
+	3px -3px 15px #555
+}
+
+.all-call .contaenir-call-my .call-my {
+	width: 300px;
+	height: 400px;
+	display: none;
+	background: #fff;
+}
+
+.all-call button {
+	border: none;
+	background: none;
+	cursor: pointer
+}
+
+.all-call .fixed-msg {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	color: #44C254;
+	-webkit-transition: 2s;
+	transition: 2s
+}
+
+.all-call .fixed-msg:hover {
+	color: #3B5998;
+}
+
+/* End call my */
+
+/* Start mobile & tablet rules */
+
+@media (max-width: 767px) {
+	.container {
+		padding: 0 5px
+	}
+	.visible-xs {
+		display: block !important
+	}
+
+	.hidden-xs {
+		display: none !important
+	}
+
+}
+
+/* End mobile & tablet rules */
+
+/* Start small rules */
+
+@media (min-width: 768px) {
+	.container {
+		width: 750px
+	}
+	.visible-sm {
+		display: block !important
+	}
+
+	.hidden-sm {
+		display: none !important
+	}
+
+	.col-sm-6-mar {
+		width: 480%;
+		float: left;
+		margin: 0 1%
+	}
+	.col-md-3-mar {
+		width: 23%;
+		float: left;
+		margin: 0 1%
+	}
+}
+
+/* End small rules */
+
+/* Start medium rules */
+
+@media (min-width: 992px) {
+	.container {
+		width: 970px
+	}
+	.visible-md {
+		display: block !important
+	}
+
+	.hidden-md {
+		display: none !important
+	}
+}
+
+/* End medium rules */
+
+/* Start large rules */
+
+@media (min-width: 1200px) {
+	.container {
+		width: 1170px
+	}
+	.visible-lg {
+		display: block !important
+	}
+
+	.hidden-lg {
+		display: none !important
+	}
+}
+
+/* End large rules */
+
+/* Start framework */
+
+.container {
+	margin-right: 15px;
+	margin-left: 15px;
+	margin: auto
+}
+
+.text-center {
+	text-align: center
+}
+
+.clearfix {
+	clear: both
+}
+
+.visible-xs,
+.visible-sm,
+.visible-md,
+.visible-lg {
+	display: none
+}
+
+.autoItem {
+	width: 100%;
+	height: 100%
+}
+
+.fixed {
+	position: fixed
+}
+
+/* End framework */
