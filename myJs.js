@@ -47,7 +47,7 @@ function showCallMy() {
 }
 
 function heddinCallMy() {
-	document.getElementById("show-call-my").style = "display: none; transition: 3s; transform: translateY(-505px)";
+	document.getElementById("show-call-my").style = "display: none; transition: 3s; transform: translateY(-400px)";
 	document.getElementById("heddin-show").style = "display: block";
 	document.getElementById("all-call").style = "";
 }
