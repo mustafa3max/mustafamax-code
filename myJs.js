@@ -43,11 +43,11 @@ function outMuose4() {
 function showCallMy() {
 	document.getElementById("show-call-my").style = "display: block";
 	document.getElementById("heddin-show").style = "display: none";
-	document.getElementById("all-call").style = "transition: 3s; transform: translateY(-400px)";
+	document.getElementById("all-call").style = "transition: 3s; transform: translateY(-390px)";
 }
 
 function heddinCallMy() {
-	document.getElementById("show-call-my").style = "display: none; transition: 3s; transform: translateY(-400px)";
+	document.getElementById("show-call-my").style = "display: none; transition: 3s; transform: translateY(-390px)";
 	document.getElementById("heddin-show").style = "display: block";
 	document.getElementById("all-call").style = "";
 }
