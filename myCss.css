@@ -101,12 +101,10 @@ header .overlay h1 {
 }
 
 header .overlay p {
-	font-size: 200%;
+	font-size: 150%;
 	display: inline-block;
-	color: #a54107;
-	text-shadow: 0px 0px 8px #fbcaca;
-	font-weight: 600;
-	text-transform: capitalize
+	color: #e3e3c3;
+	text-shadow: 0px 0px 5px #000
 }
 
 header .overlay h1::before {
