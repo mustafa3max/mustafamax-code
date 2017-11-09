@@ -28,7 +28,7 @@ nav > i {
 	position: absolute;
 	top: 10px;
 	right: 10px;
-	color: red;
+	color: red
 }
 
 nav ul {
@@ -36,10 +36,12 @@ nav ul {
 	margin: 50px auto;
 }
 
+
 nav ul a li {
 	list-style: none;
 	font-size: 300%;
-	color: #715a5a;
+	color: #444;
+	background: #a19a90;
 	width: 100%;
 	padding: 10px;
 	margin: 10px 0;
@@ -48,9 +50,14 @@ nav ul a li {
 	border: solid 10px
 }
 
+nav ul a li i {
+	color: #125d03
+}
+
 nav ul a li:hover {
-	color: red;
-	border: dashed 3px
+	color: #888;
+	border: dashed 3px;
+	background: #f2c79f
 }
 
 @media (max-width: 767px) {
