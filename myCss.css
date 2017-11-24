@@ -72,12 +72,12 @@ nav i {
 	padding-top: 70px;
 }
 
-.slide-nav hr {
+.slide-nav .link-my hr {
 	border: solid 0.5px #5A5E61;
 	margin: 0
 }
 
-.slide-nav a {
+.slide-nav .link-my a {
 	color: #fff;
 	line-height: 2;
 	display: flex;
@@ -87,36 +87,37 @@ nav i {
 	padding: 10px 0;
 }
 
-.slide-nav a span {
+.slide-nav .link-my a span {
 	position: relative;
 	right: 20px;
 }
 
 .social {
-	display: flex;
-	justify-content: center
+	text-align: center;
+	margin-top: 15px
 }
 
-.social i {
+.social a {
 	color: #c1c1c1;
-	cursor: pointer;
 	transition: 1s;
-	margin: 15px 10px
+	display: inline-flex;
+	background: none;
+	margin: 5px
 }
 
-.social i:first-of-type:hover {
+.social a:first-of-type:hover {
 	color: #3C5A99
 }
 
-.social i:nth-of-type(2):hover {
+.social a:nth-of-type(2):hover {
 	color: #DC4A38
 }
 
-.social i:nth-of-type(3):hover {
+.social a:nth-of-type(3):hover {
 	color: #1DA1F2
 }
 
-.social i:last-of-type:hover {
+.social a:last-of-type:hover {
 	color: #CE201F
 }
 
@@ -128,7 +129,7 @@ header {
 	width: 100%;
 	height: 568px;
 	background: #647077;
-	background-image: url(https://lagooncarrental.is/kerfi/wp-content/uploads/2016/08/3_Lagoon_Kain-Mellowship_Wander___Boy2-1500x800.jpg);
+	background-image: url(../images/logo.png);
 	background-size: cover;
 	color: #fff;
 	padding: 70px 0;
