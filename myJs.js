@@ -1,62 +1,99 @@
-/* Show nav */
-function showNav() {
-	document.getElementById("show-nav").style = "display: block";
-	document.getElementById("display-btn").style = "display: none";
+/*jslint devel: true */
+
+
+/*------------------------Father----------------------------*/
+/* Start Navbar */
+/* This is the code navbar & list slider */
+
+/*____________________________________________________*/
+/* variable */
+
+var btnListShow = document.getElementById("btn-list-show"),
+	list = document.getElementById("list"),
+	linkOne = document.getElementById("link-1"),
+	linkTwo = document.getElementById("link-2"),
+	linkThree = document.getElementById("link-3"),
+	linkFour = document.getElementById("link-4"),
+	linkFive = document.getElementById("link-5"),
+	randomMy = Math.random(),
+	roundMy;
+
+/*__________________________Son__________________________*/
+/* Change the random timing of the links when the list goes down */
+
+function myRandom(num) {
+	"use strict";
+	roundMy = Math.round(randomMy * num);
+	if (roundMy > 1500) {
+		var numIF = roundMy;
+	} else {
+		var numElse = 2000;
+	}
+	return numIF, numElse, roundMy;
 }
 
-function heddieNav() {
-	document.getElementById("show-nav").style = "display: none";
-	document.getElementById("display-btn").style = "display: block";
-}
-
-/* border-bottom-hover1 */
-function overMuose1() {
-	document.getElementById("border-bottom-hover1").style = "border-bottom: 5px solid #C96507";
-}
+/*__________________________Son__________________________*/
 
 
-function outMuose1() {
-	document.getElementById("border-bottom-hover1").style = "border-bottom: 5px solid# fff";
-}
+/*__________________________Son__________________________*/
+/* visible and hidden the list in the navbar */
 
-/* border-bottom-hover2 */
-function overMuose2() {
-	document.getElementById("border-bottom-hover2").style = "border-bottom: 5px solid #C96507";
-}
+btnListShow.onclick = function () {
+	"use strict";
 
+	if (btnListShow.className.length >= 16) {
 
-function outMuose2() {
-	document.getElementById("border-bottom-hover2").style = "border-bottom: 5px solid# fff";
-}
+		list.classList.toggle("move-down");
 
-/* border-bottom-hover3 */
-function overMuose3() {
-	document.getElementById("border-bottom-hover3").style = "border-bottom: 5px solid #C96507";
-}
+		setTimeout(
+			function () {
+				linkOne.style = "transition: 3s; transform: translateX(0px)";
+			},
+			myRandom(4000)
+		);
+		setTimeout(
+			function () {
+				linkTwo.style = "transition: 3s; transform: translateX(0px)";
+			},
+			myRandom(3000)
+		);
 
+		setTimeout(
+			function () {
+				linkThree.style = "transition: 3s; transform: translateX(0px)";
+			},
+			myRandom(2500)
+		);
 
-function outMuose3() {
-	document.getElementById("border-bottom-hover3").style = "border-bottom: 5px solid# fff";
-}
+		setTimeout(
+			function () {
+				linkFour.style = "transition: 3s; transform: translateX(0px)";
+			},
+			myRandom(3500)
+		);
+		setTimeout(
+			function () {
+				linkFive.style = "transition: 3s; transform: translateX(0px)";
+			},
+			myRandom(3750)
+		);
 
-/* border-bottom-hover4 */
-function overMuose4() {
-	document.getElementById("border-bottom-hover4").style = "border-bottom: 5px solid #C96507";
-}
+		btnListShow.classList.remove("fa", "fa-bars", "fa-lg");
+		btnListShow.classList.add("fa", "fa-times", "fa-lg");
 
+		btnListShow.onclick = function () {
 
-function outMuose4() {
-	document.getElementById("border-bottom-hover4").style = "border-bottom: 5px solid# fff";
-}
+			list.classList.toggle("move-up");
+			list.firstElementChild.classList.toggle("move-left");
 
+			btnListShow.classList.remove("fa", "fa-times", "fa-lg");
+			btnListShow.classList.add("fa", "fa-bars", "fa-lg");
 
-/* show call my */
-function showCallMy() {
-	document.getElementById("show-call-my").style = "display: block";
-	document.getElementById("heddin-show").style = "display: none";
-}
+		};
 
-function heddinCallMy() {
-	document.getElementById("show-call-my").style = "display: none";
-	document.getElementById("heddin-show").style = "display: block";
-}
+	}
+
+};
+
+/* End Navbar */
+/*------------------------Father----------------------------*/
