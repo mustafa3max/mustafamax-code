@@ -194,6 +194,19 @@ header h1 {
 
 /* End ads */
 
+/* Start Footer */
+
+footer {
+	padding: 30px 0;
+	text-align: center;
+	text-transform: uppercase;
+	color: #fff;
+	background: #0DB294
+}
+
+/* End Footer */
+
+
 /* --------------------------------------------------------------- */
 
 /* Start Media Query */
