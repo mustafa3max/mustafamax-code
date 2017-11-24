@@ -1,6 +1,3 @@
-/*jslint devel: true */
-
-
 /*------------------------Father----------------------------*/
 /* Start Navbar */
 /* This is the code navbar & list slider */
@@ -16,21 +13,101 @@ var btnListShow = document.getElementById("btn-list-show"),
 	linkFour = document.getElementById("link-4"),
 	linkFive = document.getElementById("link-5"),
 	randomMy = Math.random(),
-	roundMy;
+	roundMy,
+	numElse = 2000,
+	numIF = roundMy;
 
 /*__________________________Son__________________________*/
+/* Function */
 /* Change the random timing of the links when the list goes down */
 
 function myRandom(num) {
 	"use strict";
 	roundMy = Math.round(randomMy * num);
 	if (roundMy > 1500) {
-		var numIF = roundMy;
+		numIF;
 	} else {
-		var numElse = 2000;
+		numElse;
 	}
 	return numIF, numElse, roundMy;
 }
+
+/* Move the link in left to right */
+
+function moveSliderLeft() {
+	setTimeout(
+		function () {
+			linkOne.style = "transition: 3s; transform: translateX(0px)";
+		},
+		myRandom(4000)
+	);
+	setTimeout(
+		function () {
+			linkTwo.style = "transition: 3s; transform: translateX(0px)";
+		},
+		myRandom(3000)
+	);
+
+	setTimeout(
+		function () {
+			linkThree.style = "transition: 3s; transform: translateX(0px)";
+		},
+		myRandom(2500)
+	);
+
+	setTimeout(
+		function () {
+			linkFour.style = "transition: 3s; transform: translateX(0px)";
+		},
+		myRandom(3500)
+	);
+	setTimeout(
+		function () {
+			linkFive.style = "transition: 3s; transform: translateX(0px)";
+		},
+		myRandom(3750)
+	);
+
+}
+
+/* Move the link in right to left */
+
+function moveSliderRight() {
+	setTimeout(
+		function () {
+			linkOne.style = "transition: 3s; transform: translateX(-300px)";
+		},
+		myRandom(4000)
+	);
+	setTimeout(
+		function () {
+			linkTwo.style = "transition: 3s; transform: translateX(-300px)";
+		},
+		myRandom(3000)
+	);
+
+	setTimeout(
+		function () {
+			linkThree.style = "transition: 3s; transform: translateX(-300px)";
+		},
+		myRandom(2500)
+	);
+
+	setTimeout(
+		function () {
+			linkFour.style = "transition: 3s; transform: translateX(-300px)";
+		},
+		myRandom(3500)
+	);
+	setTimeout(
+		function () {
+			linkFive.style = "transition: 3s; transform: translateX(-300px)";
+		},
+		myRandom(3750)
+	);
+
+}
+
 
 /*__________________________Son__________________________*/
 
@@ -41,56 +118,16 @@ function myRandom(num) {
 btnListShow.onclick = function () {
 	"use strict";
 
-	if (btnListShow.className.length >= 16) {
+	btnListShow.classList.toggle("fa-bars");
+	btnListShow.classList.toggle("fa-close");
 
-		list.classList.toggle("move-down");
+	list.classList.toggle("move-up");
+	list.classList.toggle("move-down");
 
-		setTimeout(
-			function () {
-				linkOne.style = "transition: 3s; transform: translateX(0px)";
-			},
-			myRandom(4000)
-		);
-		setTimeout(
-			function () {
-				linkTwo.style = "transition: 3s; transform: translateX(0px)";
-			},
-			myRandom(3000)
-		);
-
-		setTimeout(
-			function () {
-				linkThree.style = "transition: 3s; transform: translateX(0px)";
-			},
-			myRandom(2500)
-		);
-
-		setTimeout(
-			function () {
-				linkFour.style = "transition: 3s; transform: translateX(0px)";
-			},
-			myRandom(3500)
-		);
-		setTimeout(
-			function () {
-				linkFive.style = "transition: 3s; transform: translateX(0px)";
-			},
-			myRandom(3750)
-		);
-
-		btnListShow.classList.remove("fa", "fa-bars", "fa-lg");
-		btnListShow.classList.add("fa", "fa-times", "fa-lg");
-
-		btnListShow.onclick = function () {
-
-			list.classList.toggle("move-up");
-			list.firstElementChild.classList.toggle("move-left");
-
-			btnListShow.classList.remove("fa", "fa-times", "fa-lg");
-			btnListShow.classList.add("fa", "fa-bars", "fa-lg");
-
-		};
-
+	if (btnListShow.className.length === 16) {
+		moveSliderRight();
+	} else {
+		moveSliderLeft();
 	}
 
 };
