@@ -1,3 +1,6 @@
+/*jslint devel: true */
+
+
 /*------------------------Father----------------------------*/
 /* Start Navbar */
 /* This is the code navbar & list slider */
