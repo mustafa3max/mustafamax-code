@@ -26,10 +26,13 @@ nav {
 	height: 70px;
 	background-color: #414749;
 	opacity: .95;
-	display: flex;
-	align-items: center;
 	text-align: center;
 	z-index: 1
+}
+
+.logo {
+	display: block;
+	margin-top: 20px
 }
 
 nav a {
@@ -60,6 +63,34 @@ nav i {
 	z-index: 0
 }
 
+/* Link Navbar Horesontil */
+
+.link-my-nav {
+	width: 70%;
+	float: right;
+	margin-top: 27px;
+	text-align: right;
+	display: none;
+	font-size: 12px
+}
+
+.link-my-nav li {
+	margin-left: 30px;
+	float: right;
+	list-style: none;
+}
+
+.link-my-nav li a {
+	transition: .3s;
+	width: 100px;
+	padding-bottom: 5px;
+	transition: .6s
+}
+
+.link-my-nav li a:hover {
+	border-bottom: solid 5px #F08C1F
+}
+
 /* Slide Navbar */
 
 .slide-nav {
@@ -67,7 +98,7 @@ nav i {
 	width: 100%;
 	height: 100%;
 	left: 0;
-	transform: translateY(-875px);
+	transform: translateY(-900px);
 	opacity: .96;
 	padding-top: 70px;
 }
@@ -185,7 +216,7 @@ header h1 {
 
 .ads {
 	background: #87A1AB;
-	padding: 20px 0;
+	padding: 20px 0
 }
 
 .ads img {
@@ -194,6 +225,19 @@ header h1 {
 }
 
 /* End ads */
+
+/* Start youtube */
+
+.youtube {
+	background: #87A1AB;
+	padding: 20px 0
+}
+
+.youtube iframe {
+	width: 100%
+}
+
+/* End youtube */
 
 /* Start Footer */
 
@@ -207,13 +251,79 @@ footer {
 
 /* End Footer */
 
+/* Start Wait for the page to load */
+
+.page-load {
+	width: 100%;
+	height: 100%;
+	background-color: #ccc;
+	top: 0;
+	z-index: 5;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font: 60px/0 'Great Vibes', cursive;
+}
+
+.page-load div:first-of-type {
+	text-align: center
+}
+
+.page-load p::before {
+	content: "m";
+	text-transform: uppercase;
+	color: #c46c07
+}
+
+.page-load span::before {
+	content: "m";
+	text-transform: uppercase;
+	color: #757575
+}
+
+
+.page-load .move-loading {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	border-top: solid 6px #494949;
+	border-right: solid 6px #494949;
+	border-bottom: solid 6px #cd570e;
+	border-left: solid 6px #494949;
+	transition: 3s;
+	animation: search 1s linear infinite
+}
+
+@keyframes search {
+	from {
+		transform: rotateZ(360deg)
+	}
+}
+
+/* End Wait for the page to load */
+
 /* --------------------------------------------------------------- */
 
 /* Start Media Query */
 
 /* Small Devices, Tablets */
 
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+	.nav-list {
+		display: none
+	}
+	.link-my-nav {
+		display: block;
+	}
+	.logo {
+		width: 30%;
+		float: left;
+		text-align: left
+	}
+	.slide-nav {
+		display: none
+	}
+}
 
 /* Medium Devices, Desktops */
 
@@ -275,6 +385,12 @@ footer {
 .move-right {
 	transition: 3s;
 	transform: translateX(200px)
+}
+
+.center {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 }
 
 /* End Framework */
