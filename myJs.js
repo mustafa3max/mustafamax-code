@@ -14,11 +14,8 @@ var btnListShow = document.getElementById("btn-list-show"),
 	linkTwo = document.getElementById("link-2"),
 	linkThree = document.getElementById("link-3"),
 	linkFour = document.getElementById("link-4"),
-	linkFive = document.getElementById("link-5"),
-	randomMy = Math.random(),
-	roundMy,
-	numElse = 2000,
-	numIF = roundMy;
+	linkFive = document.getElementById("link-5");
+
 
 /*__________________________Son__________________________*/
 /* Function */
@@ -26,18 +23,24 @@ var btnListShow = document.getElementById("btn-list-show"),
 
 function myRandom(num) {
 	"use strict";
-	roundMy = Math.round(randomMy * num);
+
+	var roundMy = Math.round(Math.random() * num),
+		numElse = 2000;
+
 	if (roundMy > 1500) {
-		numIF;
+		roundMy.toFixed();
 	} else {
-		numElse;
+		numElse.toFixed();
 	}
-	return numIF, numElse, roundMy;
+	return numElse + roundMy;
 }
 
 /* Move the link in left to right */
 
 function moveSliderLeft() {
+
+	"use strict";
+
 	setTimeout(
 		function () {
 			linkOne.style = "transition: 3s; transform: translateX(0px)";
@@ -76,37 +79,39 @@ function moveSliderLeft() {
 /* Move the link in right to left */
 
 function moveSliderRight() {
+	"use strict";
+
 	setTimeout(
 		function () {
-			linkOne.style = "transition: 3s; transform: translateX(-300px)";
+			linkOne.style = "transition: .1s; transform: translateX(-300px)";
 		},
-		myRandom(4000)
+		400
 	);
 	setTimeout(
 		function () {
-			linkTwo.style = "transition: 3s; transform: translateX(-300px)";
+			linkTwo.style = "transition: .1s; transform: translateX(-300px)";
 		},
-		myRandom(3000)
+		400
 	);
 
 	setTimeout(
 		function () {
-			linkThree.style = "transition: 3s; transform: translateX(-300px)";
+			linkThree.style = "transition: .1s; transform: translateX(-300px)";
 		},
-		myRandom(2500)
+		400
 	);
 
 	setTimeout(
 		function () {
-			linkFour.style = "transition: 3s; transform: translateX(-300px)";
+			linkFour.style = "transition: .1s; transform: translateX(-300px)";
 		},
-		myRandom(3500)
+		400
 	);
 	setTimeout(
 		function () {
-			linkFive.style = "transition: 3s; transform: translateX(-300px)";
+			linkFive.style = "transition: .1s; transform: translateX(-300px)";
 		},
-		myRandom(3750)
+		400
 	);
 
 }
@@ -137,3 +142,43 @@ btnListShow.onclick = function () {
 
 /* End Navbar */
 /*------------------------Father----------------------------*/
+///////////////////////> MUSTAFAMAX <///////////////////////////
+/*------------------------Father----------------------------*/
+/* Start Youtube */
+/*
+var videoOne = document.getElementById("video-one"),
+	videoTwo = document.getElementById("video-two"),
+	linksVideoOne = [
+		"p8Ni9YR4i-k",
+		"ksSIjC6VK-8",
+		"LnPwC4pzviE",
+		"embed/4N1RQaMk0z0",
+		"QUlpkBgqmEY"
+	],
+	linksVideoTwo = [
+		"LnPwC4pzviE",
+		"embed/4N1RQaMk0z0",
+		"DZ5EUt8swKU",
+		"e03pw3L5bxA",
+		"ROM7b9mueSA"
+	],
+	lengthListVideo = Math.floor(Math.random() * linksVideoOne.length);
+
+window.onload = function () {
+	"use strict";
+	videoOne.setAttribute("src", "https://www.youtube.com/watch?v=" + linksVideoOne[lengthListVideo]);
+	videoTwo.setAttribute("src", "https://www.youtube.com/watch?v=" + linksVideoTwo[lengthListVideo]);
+};
+*/
+/* End Youtube */
+/*------------------------Father----------------------------*/
+///////////////////////> MUSTAFAMAX <///////////////////////////
+/*------------------------Father----------------------------*/
+/* Start Wait for the page to load */
+
+window.onload = function () {
+	"use strict";
+	document.getElementById("page-load").style = "display: none";
+};
+
+/* End Wait for the page to load */
