@@ -44,8 +44,8 @@ nav .logo::before {
 
 nav a {
 	color: #fff;
-	font-size: 150%;
-	font-family: 'Montserrat', sans-serif;
+	font-size: 120%;
+	font-family: 'Cairo', sans-serif;
 }
 
 nav i {
@@ -268,7 +268,66 @@ header a i {
 	text-align: center
 }
 
-/* End youtube */
+/* 
+
+/* Start Social & Links */
+
+.social_links {
+	background: #404548;
+	border-top: solid 1px #f78640;
+	padding: 20px 0;
+	text-align: center;
+}
+
+.logo-bottom p {
+	display: block;
+	margin-top: 20px;
+	color: #fff;
+	font-size: 150%;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.logo-bottom p::before {
+	content: "mustafamax"
+}
+
+.social_links h3 {
+	color: #fff;
+	font-weight: 100;
+	font-family: 'Cairo', sans-serif;
+}
+
+.social_links .follow-bottom i {
+	width: 40px;
+	height: 40px;
+	background: #6e9090;
+	border-radius: 50%;
+	color: #fff;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	transition: .7s;
+	margin: 5px
+
+}
+
+.social_links .follow-bottom .fa-facebook:hover {
+	background: #4365A5;
+}
+
+.social_links .follow-bottom .fa-google-plus:hover {
+	background: #DD4B39;
+}
+
+.social_links .follow-bottom .fa-twitter:hover {
+	background: #5EA9DD;
+}
+
+.social_links .follow-bottom .fa-youtube:hover {
+	background: #E52C27;
+}
+
+/* End Social & Links */
 
 /* Start Footer */
 
@@ -453,6 +512,12 @@ footer {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+}
+
+.center-top {
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
 }
 
 .center-center {
