@@ -1,4 +1,5 @@
 /*jslint devel: true */
+/*global $, SmoothScroll*/
 
 
 /*------------------------Father----------------------------*/
@@ -133,9 +134,13 @@ btnListShow.onclick = function () {
 	list.classList.toggle("move-down");
 
 	if (btnListShow.className.length === 16) {
+		
 		moveSliderRight();
+		
 	} else {
+		
 		moveSliderLeft();
+		
 	}
 
 };
@@ -144,41 +149,101 @@ btnListShow.onclick = function () {
 /*------------------------Father----------------------------*/
 ///////////////////////> MUSTAFAMAX <///////////////////////////
 /*------------------------Father----------------------------*/
-/* Start Youtube */
-/*
-var videoOne = document.getElementById("video-one"),
-	videoTwo = document.getElementById("video-two"),
-	linksVideoOne = [
-		"p8Ni9YR4i-k",
-		"ksSIjC6VK-8",
-		"LnPwC4pzviE",
-		"embed/4N1RQaMk0z0",
-		"QUlpkBgqmEY"
-	],
-	linksVideoTwo = [
-		"LnPwC4pzviE",
-		"embed/4N1RQaMk0z0",
-		"DZ5EUt8swKU",
-		"e03pw3L5bxA",
-		"ROM7b9mueSA"
-	],
-	lengthListVideo = Math.floor(Math.random() * linksVideoOne.length);
+/* Start Scroll Top*/
 
-window.onload = function () {
+var scrolTop = document.getElementById("scroll-top");
+	
+window.onscroll = function () {
+	
 	"use strict";
-	videoOne.setAttribute("src", "https://www.youtube.com/watch?v=" + linksVideoOne[lengthListVideo]);
-	videoTwo.setAttribute("src", "https://www.youtube.com/watch?v=" + linksVideoTwo[lengthListVideo]);
+	
+	if (window.scrollY > 500) {
+		
+		scrolTop.style.display = "block";
+		
+	} else {
+		
+		scrolTop.style.display = "none";
+		
+	}
+	
 };
-*/
-/* End Youtube */
+
+/* End Scroll Top */
 /*------------------------Father----------------------------*/
 ///////////////////////> MUSTAFAMAX <///////////////////////////
 /*------------------------Father----------------------------*/
-/* Start Wait for the page to load */
+/* Start code jQuery */
 
-window.onload = function () {
+$(function () {
 	"use strict";
-	document.getElementById("page-load").style = "display: none";
-};
 
-/* End Wait for the page to load */
+	var scroll = new SmoothScroll('a[href*="#"]', {
+			speed: 1500,
+			easing: 'easeOutCubic',
+			ignore: '[data-scroll-ignore]'
+
+		}),
+		heightWindow = $(window).height(),
+		widthWindow = $(window).width();
+
+	$(".height-window").height($(window).height());
+
+	/* Start resize window site */
+
+	$(window).on("resize", function () {
+
+		$(".height-window").height($(window).height());
+
+		var scroll = new SmoothScroll('a[href*="#"]', {
+			speed: 1500,
+			easing: 'easeOutCubic',
+			ignore: '[data-scroll-ignore]'
+		});
+
+	});
+
+	/* End resize window site */
+
+	/* Start responsive video */
+
+	$(".youtube").fitVids();
+
+	/* End responsive video */
+
+	/* Start load page site */
+
+	$("#page-load").hide();
+
+	/* End load page site */
+
+	/* Start scroll site */
+
+	$("html").niceScroll({
+		cursorcolor: "#888",
+		cursorwidth: "15px",
+		cursorborder: "1px solid #555",
+		cursorborderradius: null,
+		cursoropacitymin: 0.1,
+		zindex: 1
+	});
+
+	/* End scroll site */
+	
+	/* Start responsive text */
+	
+	if (widthWindow > 500) {
+		
+		$(".fit-text").fitText(4);
+		
+	} else {
+		
+		$(".fit-text").fitText(2.5);
+		
+	}
+	
+	/* End responsive text */
+
+});
+
+/* End code jQuery */
