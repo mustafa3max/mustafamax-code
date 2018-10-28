@@ -1,0 +1,36 @@
+<resources>
+    <string name="text_app_name">الإمتحانات الوزارية</string>
+    <string name="text_sixth_grade_primary">أسئلة الصف السادس الابتدائي</string>
+    <string name="text_third_grade_average">أسئلة الصف الثالث المتوسط</string>
+    <string name="text_btn_what_this">ما هذا</string>
+    <string name="text_application_subscribers">القائمين بهذا العمل</string>
+    <string name="text_assess_app">قيمنا</string>
+    <string name="text_welcome">أهلا بك في تطبيق\nالإمتحانات الوزارية</string>
+    <string name="text_what_this">اهلا بك في تطبيق الإمتحانات الوزارية\nعزيزنا الطالب إن هذا التطبيق يوفر لك اسئلة امتحانات وزارية للصفوف المنتهية\nالسادس الابتدائي\nالثالث المتوسط\nهذه الاسئلة تساعدك على فهم المادة الامتحانية التي تأتي في الواقع في قاعات الامتحانات فكلما قمت بحل اسئلة أكثر كلما ازدادت معلوماتك بالمادة المعينة قم بحل الاسئلة بصورة صحيحة واحصل على درجة عالية والتطبيق يوفر لك وسيلة لحل السؤال لا تستخدم هذه الخاصية الا عند الضرورة لإن سبب انشائنا لهذا التطبيق هو توفير طريقة تسهل عليك تذكر الاسئلة وحلها ولا تتم هذه الفكرة إلا بحلك لهذه الأسئلة باعتمادك على نفسك\nنتمنى لك التوفيق</string>
+    <string name="text_home">الصفحة الرئيسية</string>
+    <string name="text_author">برمجة وتصميم mustafamax</string>
+    <string name="text_the_holy_quran">القرأن الكريم</string>
+    <string name="text_arabic_reading">القراءة العربية</string>
+    <string name="text_science">العلوم</string>
+    <string name="text_mathematics">الرياضيات</string>
+    <string name="text_arabic_grammar">قواعد اللغة العربية</string>
+    <string name="text_social_studies">الإجتماعيات</string>
+    <string name="text_english">اللغة الإنجليزية</string>
+    <string name="text_arabic">اللغة العربية</string>
+    <string name="text_history">التاريخ</string>
+    <string name="text_geographically">الجغرافية</string>
+    <string name="text_national">الوطنية</string>
+    <string name="text_physics">الفيزياء</string>
+    <string name="text_chemistry">الكيمياء</string>
+    <string name="text_biology">الأحياء</string>
+    <string name="text_year_2016">اسئلة سنة 2016</string>
+    <string name="text_year_2017">اسئلة سنة 2017</string>
+    <string name="text_year_2018">اسئلة سنة 2018</string>
+    <string name="text_select_year">إختر السنة الدراسية</string>
+    <string name="text_note">ملاحظة أجب عن خمسة أسئلة فقط , ولكل سؤال 20 درجة</string>
+
+    <string name="text_are_you_sure">أنا واثق</string>
+    <string name="text_help">ساعدني</string>
+    <string name="text_help_friend">إستعن بصديق</string>
+
+</resources>
